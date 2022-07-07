@@ -1,0 +1,47 @@
+.loader {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  min-height: 250px;
+  animation: skeleton-loading 0.8s linear infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circularProgress {
+  height: 50px;
+  width: 50px;
+  border: 3px solid blue;
+  border-radius: 50%;
+  position: relative;
+  animation: circular 0.8s infinite linear;
+}
+.circularProgress::after {
+  content: "";
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  transform: rotate(-50deg);
+}
+
+/* @keyframes skeleton-loading {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+} */
+
+@keyframes circular {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

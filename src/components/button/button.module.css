@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+  padding: 12px 10px;
+  color: white;
+  background-color: darkblue;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:disabled {
+  opacity: 0.6;
+}

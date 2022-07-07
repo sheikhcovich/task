@@ -1,0 +1,21 @@
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: rgb(168, 166, 166);
+  margin-bottom: 10px;
+}
+.remember_me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.remember_me input {
+  width: 10px;
+}
+.forgot_password {
+  text-decoration: none;
+  color: rgb(168, 166, 166);
+}
