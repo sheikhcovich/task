@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./button.module.css";
-export const Button = ({ text, disabled, ...rest }) => {
+import {Button} from "@mui/material"
+export const CustomButton = ({ text, disabled, ...rest }) => {
   return (
-    <button disabled={disabled} className={styles.button} {...rest}>
+    <Button variant="contained" className={styles.button} disabled={disabled}  {...rest}>
       {text}
-    </button>
+    </Button>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./input.module.css";
-export const Input = ({
+import { InputAdornment, TextField} from "@mui/material"
+export const CustomInput = ({
   type = "text",
   icon,
   placeholder,
@@ -11,12 +12,20 @@ export const Input = ({
 }) => {
   return (
     <div className={styles.inputContainer}>
-      {icon}
-      <input
+      <TextField
+      style={{width:"100%"}}
+      variant="outlined"
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">
+           {icon}
+          </InputAdornment>
+        ),
+      }}
         value={value}
-        className={styles.input}
+        // className={styles.input}
         type={type}
-        placeholder={placeholder}
+        label={placeholder}
         name={name}
         onChange={(e) => onchange(e.target.name, e.target.value)}
         {...rest}

@@ -1,18 +1,11 @@
 .button {
   width: 100%;
-  padding: 12px 10px;
-  color: white;
-  background-color: darkblue;
-  border: 0;
-  border-radius: 3px;
+  background-color: darkblue !important;
   text-transform: uppercase;
   margin-top: 10px;
-  cursor: pointer;
-  transition: 0.5s;
+  color:white;
+  transition: .3s;
 }
-.button:hover {
-  opacity: 0.9;
-}
-.button:disabled {
-  opacity: 0.6;
+.button:hover{
+ background-color: red !important;
 }
